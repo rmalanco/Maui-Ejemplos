@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.Pages.FlexLayoutSample.FlexLayoutChallenge"
+             Title="FlexLayoutChallenge">
+    <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="SpaceEvenly">
+        <Label 
+            Padding="10"
+            Text="FlexLayout Challenge" 
+            FontSize="Large" />
+        <Frame 
+            Padding="10"
+            CornerRadius="10"
+            BorderColor="Black"
+            BackgroundColor="LightGray"
+            WidthRequest="300"
+            HeightRequest="300">
+            <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center">
+                <Label Text="Bienvenido a .NET MAUI" FontSize="Large" />
+                <Image Source="dotnet_bot.png" />
+                <Label Text="Ejemplo de FlexLayout" FontSize="Small" />
+            </FlexLayout>
+        </Frame>
+        <!--datos del usuario-->
+        <Frame            
+            Padding="10"
+            CornerRadius="10"
+            BorderColor="Black"
+            BackgroundColor="LightGray"
+            WidthRequest="300"
+            HeightRequest="400">
+            <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center">
+                <Image Source="perfil1" HeightRequest="120" WidthRequest="120" />
+                <Label Text="Rafael Malanco" FontSize="Large" Padding="10" />
+                <Label Text="Analista de Sistemas" FontSize="Small" />
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto" Padding="10">
+                    <Button Text="Seguir" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Margin="10,0,0,0"/>
+                    <Button Text="Mensaje" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="1" Margin="10,0,0,0"/>
+                </Grid>
+            </FlexLayout>
+        </Frame>
+    </FlexLayout>
+</ContentPage>

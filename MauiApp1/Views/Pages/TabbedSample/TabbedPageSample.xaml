@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp1.Views.Pages.TabbedSample.TabbedPageSample"
+            xmlns:Views="clr-namespace:MauiApp1.Views.Pages.TabbedSample"
+            Title="TabbedPageSample">
+    <Views:TabbedPage1
+        Title="Home"
+        IconImageSource="home.svg"
+        />
+    <Views:TabbedPage2
+        Title="About"
+        IconImageSource="about.svg"
+        />
+    <Views:TabbedPage3
+        Title="Contact"
+        IconImageSource="contact.svg"
+        />
+</TabbedPage>

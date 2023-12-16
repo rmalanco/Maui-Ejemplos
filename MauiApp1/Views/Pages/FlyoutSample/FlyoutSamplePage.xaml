@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiApp1.Views.Pages.FlyoutSample.FlyoutSamplePage"
+            xmlns:Views="clr-namespace:MauiApp1.Views.Pages.FlyoutSample"
+            xmlns:Local="clr-namespace:MauiApp1"
+            Title="FlyoutSamplePage">
+    <FlyoutPage.Flyout>
+        <Views:FlyoutMenuPage x:Name="FlyoutPage" />
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <Local:MainPage />
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

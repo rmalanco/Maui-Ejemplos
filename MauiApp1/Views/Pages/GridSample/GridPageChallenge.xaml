@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.Pages.GridSample.GridPageChallenge"
+             Title="GridPageChallenge">
+    <VerticalStackLayout Background="#8c91b1">
+        <Frame Margin="20,30" CornerRadius="20">
+            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto">
+                <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" BackgroundColor="Transparent" BorderColor="Transparent" IsClippedToBounds="True" Padding="0" CornerRadius="20">
+                    <Image Source="perfil1" Aspect="AspectFit" HeightRequest="120" WidthRequest="120"/>
+                </Frame>
+                <Label Grid.Row="0" Grid.Column="1" Text="Rafael Malanco" FontSize="20" FontAttributes="Bold" TextColor="Black" Padding="20,0,0,0"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="Analista de Sistemas" FontSize="15" TextColor="DarkGreen" Padding="20,0,0,0"/>
+                <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="Transparent" BorderColor="Transparent" HeightRequest="70" Margin="0,10">
+                    <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" ColumnSpacing="5">
+                        <Label Grid.Row="0" Grid.Column="0" Text="Articulos" FontSize="11" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>                        
+                        <Label Grid.Row="1" Grid.Column="0" Text="34" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Seguidores" FontSize="11" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="125" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Grid.Row="0" Grid.Column="2" Text="Seguindo" FontSize="11" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Grid.Row="1" Grid.Column="2" Text="34" FontSize="14" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </Grid>
+                </Frame>
+                <Button Grid.Row="3" Grid.Column="1" BackgroundColor="DarkGreen" TextColor="White" Text="Seguir" CornerRadius="10" Margin="10,0,0,0"/>
+                <Button Grid.Row="3" Grid.Column="0" BackgroundColor="DarkGreen" TextColor="White" Text="Chat" CornerRadius="10" Margin="0,0,0,0"/>               
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

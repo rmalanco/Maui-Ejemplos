@@ -1,0 +1,221 @@
+Curso de .Net MAUI
+
+Que es .Net MAUI
+
+.Net MAUI es el nuevo framework de Microsoft para crear aplicaciones multiplataforma, 
+es decir, que se pueden ejecutar en diferentes sistemas operativos como Windows, Linux,
+MacOs, Android, iOS, etc.
+
+.Net MAUI es el sucesor de Xamarin Forms, por lo que si ya conoces Xamarin Forms,
+te será muy fácil aprender .Net MAUI.
+
+.Net MAUI es un framework de código abierto, por lo que puedes contribuir a su desarrollo
+y mejorarlo.
+
+.Net MAUI es multiplataforma, por lo que puedes desarrollar aplicaciones para diferentes
+sistemas operativos con un mismo código.
+
+Que es XAML?
+
+XAML es un lenguaje de marcado que se utiliza para crear interfaces de usuario en .Net MAUI.
+
+Se compone por etiquetas y atributos.
+
+La estrunctura es similar a HTML.
+
+XAML es un lenguaje declarativo, es decir, que se utiliza para describir la interfaz de usuario.
+
+Su estrunctura es Pages, Layouts, Views y Controls.
+
+----------- Pages -----------
+|							|
+|	|----- Layouts ------|	|
+|	|					 |	|
+|	|	|--- Views ---|	 |	|
+|	|	|			  |	 |	|
+|	|	|	          |	 |	|
+
+Que son los Pages?
+
+Los Pages son las páginas de la aplicación, es decir, las pantallas que se muestran al usuario.
+
+Los 4 tipos de Pages son:
+
+ContentPage: Es la página más básica, se utiliza para mostrar contenido.
+FlyoutPage: Es una página que contiene un menú lateral.
+NavigationPage: Es una página que contiene un menú de navegación.
+TabbedPage: Es una página que contiene un menú de pestañas.
+
+Paginas extras:
+
+CarouselPage: Es una página que contiene un carrusel de páginas.
+MasterDetailPage: Es una página que contiene un menú lateral y un menú de navegación.
+
+que es StackLayout?
+
+Es un Layout que organiza los elementos de forma vertical u horizontal.
+
+Vertical: Los elementos se organizan de arriba hacia abajo.
+Horizontal: Los elementos se organizan de izquierda a derecha.
+
+que es TabbedPage?
+
+Es una página que contiene un menú de pestañas.
+
+que es NavigationPage?
+
+Es una página que contiene un menú de navegación.
+
+que es FlyoutPage?
+
+Es una página que contiene un menú lateral.
+
+que es ContentPage?
+
+Es la página más básica, se utiliza para mostrar contenido.
+
+que es CarouselPage?
+
+Es una página que contiene un carrusel de páginas.
+
+que es AbsoluteLayout?
+
+Es un Layout que permite posicionar los elementos de forma absoluta.
+
+que es Grid?
+
+Es un Layout que organiza los elementos en filas y columnas.
+
+La forma de ocupa el espacio es mediante filas y columnas.
+
+Ejemplo:
+
+<Grid>
+	<Grid.RowDefinitions>
+		<RowDefinition Height="Auto" />
+		<RowDefinition Height="*" />
+		<RowDefinition Height="Auto" />
+	</Grid.RowDefinitions>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="*" />
+		<ColumnDefinition Width="*" />
+	</Grid.ColumnDefinitions>
+</Grid>
+
+Lo que hace el ejemplo anterior es crear un Grid con 3 filas y 2 columnas.
+
+La primera fila ocupa el espacio que necesite, la segunda fila ocupa todo el espacio restante y la tercera fila ocupa el espacio que necesite.
+
+Las dos columnas ocupan el espacio que necesiten.
+
+que es FlexLayout?
+
+Es un Layout que organiza los elementos de forma flexible, es decir, que se pueden organizar en filas o columnas.
+
+Ejemplo, organizar los elementos en filas:
+
+<FlexLayout Direction="Row">
+	<Label Text="Elemento 1" />
+	<Label Text="Elemento 2" />
+	<Label Text="Elemento 3" />
+</FlexLayout>
+
+JustifyContent: Especifica como se distribuyen los elementos en el eje principal.
+	Start: Los elementos se distribuyen desde el inicio.
+	Center: Los elementos se distribuyen desde el centro.
+	End: Los elementos se distribuyen desde el final.
+
+SpaceAround: Los elementos se distribuyen con el mismo espacio entre ellos y el inicio y el final.
+ejemplo:
+
+<FlexLayout Direction="Row" JustifyContent="SpaceAround">
+	<Label Text="Elemento 1" />
+	<Label Text="Elemento 2" />
+	<Label Text="Elemento 3" />
+</FlexLayout>
+
+
+SpaceBetween: Los elementos se distribuyen con el mismo espacio entre ellos.
+SpaceEvenly: Los elementos se distribuyen con el mismo espacio entre ellos y el inicio y el final.
+
+AlignItems: Especifica como se distribuyen los elementos en el eje secundario.
+	Start: Los elementos se distribuyen desde el inicio.
+	Center: Los elementos se distribuyen desde el centro.
+	End: Los elementos se distribuyen desde el final.
+
+Direction: Especifica la dirección en la que se organizan los elementos.
+	Row: Los elementos se organizan en filas.
+	Column: Los elementos se organizan en columnas.
+	RowReverse: Los elementos se organizan en filas en orden inverso.
+	ColumnReverse: Los elementos se organizan en columnas en orden inverso.
+
+Wrap: Especifica si los elementos se organizan en una sola fila o en varias filas.
+	NoWrap: Los elementos se organizan en una sola fila.
+	Wrap: Los elementos se organizan en varias filas.
+	Reverse: Los elementos se organizan en varias filas en orden inverso.
+
+
+Manejo de estilos en .Net MAUI:
+
+Los estilos se pueden definir en el archivo App.xaml o en un archivo externo, por ejemplo, en un archivo llamado Styles.xaml.
+
+Los estilos se pueden aplicar a los elementos de forma global o local.
+
+Para aplicar un estilo de forma global, se debe definir en el archivo App.xaml.
+
+EStructura basica de los estilos:
+
+<Application.Resources>
+	<ResourceDictionary>
+		<Style TargetType="Label">
+			<Setter Property="TextColor" Value="Red" />
+		</Style>
+	</ResourceDictionary>
+</Application.Resources>
+
+Para aplicar un estilo de forma local, se debe definir en el archivo donde se utiliza el elemento.
+
+Estilos explicitos: Se aplican a un elemento en especifico, se debe especificar el nombre del estilo.
+
+Estilos implicitos: Se aplican a todos los elementos del mismo tipo, no se debe especificar el nombre del estilo.
+
+Ejemplo de estilo explicito:
+
+<Label Text="Hola Mundo" Style="{StaticResource EstiloLabel}" />
+
+Ejemplo de estilo implicito es el que se muestra a continuación:
+
+<Style TargetType="Label">
+	<Setter Property="TextColor" Value="Red" />
+</Style>
+
+Estilos globales: Se definen en el archivo App.xaml.
+
+Estilos locales: Se definen en el archivo donde se utiliza el elemento.
+
+Ejemplo de estilo global:
+
+<Application.Resources>
+	<ResourceDictionary>
+		<Style TargetType="Label">
+			<Setter Property="TextColor" Value="Red" />
+		</Style>
+	</ResourceDictionary>
+</Application.Resources>
+
+Ejemplo de estilo local:
+
+<ContentPage.Resources>
+	<ResourceDictionary>
+		<Style TargetType="Label">
+			<Setter Property="TextColor" Value="Red" />
+		</Style>
+	</ResourceDictionary>
+</ContentPage.Resources>
+
+
+
+
+
+
+
