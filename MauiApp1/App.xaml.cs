@@ -13,11 +13,13 @@
             //MainPage = new Views.Pages.StackLayoutSample.StackLayoutPageChallenge();
             //MainPage = new Views.Pages.AbsoluteLayoutSample.AbsoluteLayoutPageSample();
             //MainPage = new Views.Pages.GridSample.GridPageSample();
-            MainPage = new Views.Pages.GridSample.GridPageChallenge();
+            //MainPage = new Views.Pages.GridSample.GridPageChallenge();
             //MainPage = new Views.Pages.GridSample.ChallengeExtra();
             //MainPage = new Views.Pages.FlexLayoutSample.FlexLayoutPageSample();
             //MainPage = new Views.Pages.FlexLayoutSample.FlexLayoutChallenge();
             //MainPage = new Views.Pages.FlexLayoutSample.ChallengeExtra2();
+            //MainPage = new Views.Pages.Challenge.ChallengeCardUser();
+            MainPage = new Views.Pages.Challenge.ChallengePorBloques();
 
         }
     }

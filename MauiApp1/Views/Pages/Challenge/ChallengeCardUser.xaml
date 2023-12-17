@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.Pages.Challenge.ChallengeCardUser"
+             Title="ChallengeCardUser">
+    <VerticalStackLayout Background="DarkGreen">
+        <Frame Style="{StaticResource FramePrincipal}">
+            <Grid Style="{StaticResource GridContenedor}">
+                <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="1" Style="{StaticResource FrameImagen}">
+                    <Image Source="perfil1" Style="{StaticResource ImagenPerfil}"/>
+                </Frame>
+                <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Text="Rafael Malanco" Style="{StaticResource NombreUsuario}"/>
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl eget nunc ultricies aliquam. Sed vitae nisl eget nunc ultricies aliquam." Style="{StaticResource DescripcionUsuario}"/>
+                <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Padding="0,10" ColumnDefinitions="*,*">
+                    <Frame Grid.Column="0" Style="{StaticResource FrameData}">
+                        <Button Text="Book class: 10000" Style="{StaticResource BotonPrincipal}"/>
+                    </Frame>
+                    <Frame Grid.Column="1" Style="{StaticResource FrameData}">
+                        <Button Text="Follow" Style="{StaticResource BotonPrincipal}"/>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Padding="0,10" ColumnDefinitions="*,*,*">
+                    <Frame Grid.Column="0" Style="{StaticResource FrameData}">
+                        <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto,Auto">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Students" Style="{StaticResource LabelData}"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="10" Style="{StaticResource LabelData}"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Column="1" Style="{StaticResource FrameData}">
+                        <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto,Auto">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Content" Style="{StaticResource LabelData}"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="10" Style="{StaticResource LabelData}"/>
+                        </Grid>
+                    </Frame>
+                    <Frame Grid.Column="2" Style="{StaticResource FrameData}">
+                        <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto,Auto">
+                            <Label Grid.Row="0" Grid.Column="0" Text="Following" Style="{StaticResource LabelData}"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="10" Style="{StaticResource LabelData}"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

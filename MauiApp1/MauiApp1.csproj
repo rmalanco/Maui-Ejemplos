@@ -50,6 +50,8 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\about.svg" />
+	  <None Remove="Resources\Images\arrow.svg" />
+	  <None Remove="Resources\Images\close.svg" />
 	  <None Remove="Resources\Images\contact.svg" />
 	  <None Remove="Resources\Images\credit_card.jpg" />
 	  <None Remove="Resources\Images\home.svg" />
@@ -63,6 +65,12 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\Pages\AbsoluteLayoutSample\AbsoluteLayoutPageSample.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\Challenge\ChallengeCardUser.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\Challenge\ChallengePorBloques.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\FlexLayoutSample\ChallengeExtra2.xaml">
